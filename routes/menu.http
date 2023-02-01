@@ -1,0 +1,29 @@
+###
+GET http://localhost:9000/api/menu
+
+### 
+GET http://localhost:9000/api/menu/5dedfd6f-e133-4666-94ae-7e16ad648d79
+
+###
+POST http://localhost:9000/api/menu
+Content-Type: application/json
+
+{
+    "menuName": "Home",
+    "link": "/home",
+    "position": "2"
+}
+
+###
+DELETE http://localhost:9000/api/menu/a3f03e36-140d-4ec4-8629-0f44c1222e04
+
+###
+PUT http://localhost:9000/api/menu
+Content-Type: application/json
+
+{
+    "id": "df7053fa-47ab-41e1-b2f0-42f01698b85c",
+    "menuName": "about",
+    "link": "/about",
+    "position": "3"
+}
