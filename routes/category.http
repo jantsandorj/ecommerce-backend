@@ -22,7 +22,10 @@ DELETE http://localhost:9000/api/category/72df1e94-8a2d-4cc6-84ca-da4897a52bc7
 PUT http://localhost:9000/api/category
 Content-Type: application/json
 
-{
-    "id": "9f16eca7-9d50-4e3f-9c03-86cbd3f1a70d",
-    "iconImg" : ""
-}
+ {
+      "id": "41f40127-5f64-4a16-87ac-7fb3685581e8",
+      "categoryName": "Settings",
+      "link": "/settings",
+      "position": "6",
+      "iconName": "person-fill-gear"
+    }

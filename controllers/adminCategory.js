@@ -31,7 +31,7 @@ exports.create = (req, res) => {
 };
 
 exports.update = (req, res) => {
-  const { id, categoryName, link, position, iconImg } = req.body;
+  const { id, categoryName, link, position, iconName } = req.body;
   fs.readFile(dataFile, "utf-8", (readErr, data) => {
     if (readErr) {
       return res.json({ status: false, message: readErr });
@@ -39,7 +39,7 @@ exports.update = (req, res) => {
     const parsedData = JSON.parse(data);
     const updateData = parsedData.map((e) => {
       if (e.id == id) {
-        return { ...e, categoryName, position, link, iconImg };
+        return { ...e, categoryName, position, link, iconName };
       } else {
         return e;
       }
