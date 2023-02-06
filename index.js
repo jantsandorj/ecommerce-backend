@@ -10,6 +10,7 @@ app.use(express.json());
 
 const menuRouter = require("./routes/menu.route");
 const categoryRouter = require("./routes/category.route");
+const productRouter = require("./routes/product.category");
 
 app.listen(port, () => console.log("server is running"));
 
@@ -19,3 +20,4 @@ app.get("/api", (req, res) => {
 
 app.use("/api", menuRouter);
 app.use("/api", categoryRouter);
+app.use("/api", productRouter);
