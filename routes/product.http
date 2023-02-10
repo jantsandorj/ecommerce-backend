@@ -22,7 +22,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:9000/api/products/048e684c-6dd0-4c2d-b718-5aaef1b59f44
+DELETE http://localhost:9000/api/products/75400c40-eda1-4e8c-bc46-0d00853ce42a
 
 ###
 PUT http://localhost:9000/api/products
