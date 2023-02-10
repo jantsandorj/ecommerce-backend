@@ -9,9 +9,9 @@ POST http://localhost:9000/api/menu
 Content-Type: application/json
 
 {
-    "menuName": "Article",
-    "link": "/article",
-    "position": "3"
+    "menuName": "About us",
+    "link": "/aboutUs",
+    "position": "4"
 }
 
 ###
