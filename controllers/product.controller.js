@@ -53,8 +53,9 @@ exports.create = (req, res) => {
 };
 
 exports.update = (req, res) => {
+  const { id } = req.params;
+  console.log(id);
   const {
-    id,
     productName,
     categoryID,
     price,
@@ -84,7 +85,7 @@ exports.update = (req, res) => {
           quantity,
           desc,
           updateDate: Date.now(),
-          updateUser,
+          updateUser: "",
         };
       } else {
         return e;
