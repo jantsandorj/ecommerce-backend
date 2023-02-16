@@ -13,7 +13,7 @@ const categoryRouter = require("./routes/category.route");
 const productRouter = require("./routes/product.category");
 const products = require("./routes/product");
 const carddata = require("./routes/carddata.route");
-const userData = require("./routes/userData");
+const userdata = require("./routes/userdata");
 
 app.listen(port, () => console.log("server is running"));
 
@@ -26,4 +26,4 @@ app.use("/api", categoryRouter);
 app.use("/api", productRouter);
 app.use("/api", products);
 app.use("/api", carddata);
-app.use("/api", userData);
+app.use("/api", userdata);
