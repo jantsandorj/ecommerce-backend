@@ -5,8 +5,8 @@ POST http://localhost:9000/api/login
 Content-Type: application/json
 
 {
-      "password": "lol1",
-      "email": "jack3@gmail.com"
+      "password": "lol2",
+      "email": "jack2@gmail.com"
 }
 
 ### 
@@ -16,19 +16,19 @@ Content-Type: application/json
 {   "firstName": "jack",
     "lastName": "jack",
     "password": "jack123",
-    "email": "jack1123@gmail.com",
+    "email": "jack11asd23asd@gmail.com",
     "favProduct": ["ahah","eheh"],
     "mostVisitedProduct": ["boots", "sweeters"]
+
 }
 ###
 POST http://localhost:9000/api/userall
 Content-Type: application/json
 
 {
-      "firstName": "Jack",
-      "lastName": "Jack",
       "password": "lol1",
-      "email": "jack3@gmail.com"
+      "email": "jack3@gmail.com",
+      "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY0MTkyZGI1MzU2ZTBmNTM4M2UyMDFjYSIsImZpcnN0TmFtZSI6IkphY2sxIiwibGFzdE5hbWUiOiJKYWNrMSIsInBhc3N3b3JkIjoibG9sMiIsImVtYWlsIjoiamFjazJAZ21haWwuY29tIiwiZmF2UHJvZHVjdCI6W10sIm1vc3RWaXNpdGVkUHJvZHVjdCI6W10sImNyZWF0ZWRBdCI6IjIwMjMtMDMtMjFUMDQ6MDg6MjEuNDE3WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMjFUMDQ6MTE6MjcuNzg4WiIsIl9fdiI6MH0sImlhdCI6MTY3OTU0MTc4NSwiZXhwIjoxNjc5NTQ4OTg1fQ.uCCKg112G9vQDFTX9Omq6WhyhNgOXlEm-OWXTvbkLmU"
 }
 
 ###
