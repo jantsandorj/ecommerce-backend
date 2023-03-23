@@ -1,31 +1,24 @@
-
 ###
 GET http://localhost:9000/api/category
 
 ### 
-GET http://localhost:9000/api/category
+GET http://localhost:9000/api/category/6419311f52b7227a58347b73
 
 ###
 POST http://localhost:9000/api/category
 Content-Type: application/json
 
 {
-    "categoryName": "Settings",
-    "link": "/settings",
-    "position": "6"
+    "category": "Sweeter"
 }
 
 ###
-DELETE http://localhost:9000/api/category/72df1e94-8a2d-4cc6-84ca-da4897a52bc7
+DELETE http://localhost:9000/api/category/6419311f52b7227a58347b73
 
 ###
-PUT http://localhost:9000/api/category
+PUT http://localhost:9000/api/category/6419314d52b7227a58347b7b
 Content-Type: application/json
 
- {
-      "id": "41f40127-5f64-4a16-87ac-7fb3685581e8",
-      "categoryName": "Settings",
-      "link": "/settings",
-      "position": "6",
-      "iconName": "person-fill-gear"
-    }
+{
+    "category": "Boots"
+}

@@ -1,36 +1,51 @@
-
 ###
 GET http://localhost:9000/api/user
+###
+POST http://localhost:9000/api/login
+Content-Type: application/json
+
+{
+      "password": "lol1",
+      "email": "jack3@gmail.com"
+}
 
 ### 
-GET http://localhost:9000/api/user
-
-###
 POST http://localhost:9000/api/user
 Content-Type: application/json
 
-{
-      "firstName": "sparrow",
-      "lastName": "jack",
-      "password": "lol1",
-      "email": "jack@gmail.com",
-      "favProduct": [],
-      "mostVisitedProduct": []
+{   "firstName": "jack",
+    "lastName": "jack",
+    "password": "jack123",
+    "email": "jack1123@gmail.com",
+    "favProduct": ["ahah","eheh"],
+    "mostVisitedProduct": ["boots", "sweeters"]
 }
-
 ###
-DELETE http://localhost:9000/api/user/72df1e94-8a2d-4cc6-84ca-da4897a52bc7
-
-###
-PUT http://localhost:9000/api/user
+POST http://localhost:9000/api/userall
 Content-Type: application/json
 
 {
-    "id": "asjkdh",
-      "firstName": "sparrow",
-      "lastName": "jack",
+      "firstName": "Jack",
+      "lastName": "Jack",
       "password": "lol1",
-      "email": "jack@gmail.com",
-      "favProduct": [],
-      "mostVisitedProduct": []
+      "email": "jack3@gmail.com"
+}
+
+###
+POST http://localhost:9000/api/user/641bb9afbe5080aadc094adc
+Content-Type: application/json
+
+{
+      "password": "lol1",
+      "email": "jack3@gmail.com",
+      "token": ""
+}
+
+###
+POST http://localhost:9000/api/users
+Content-Type: application/json
+
+{
+      "password": "lol1",
+      "email": "jack3@gmail.com"
 }

@@ -1,0 +1,30 @@
+###
+GET http://localhost:9000/api/order
+
+### 
+GET http://localhost:9000/api/order/64128b5d8e8a16e9129aa9de
+
+###
+POST http://localhost:9000/api/order
+Content-Type: application/json
+
+{
+    "orderNumber": 2,
+    "shipped": "Yes",
+    "quantity": 10,
+    "totalPrice": 100
+}
+
+###
+DELETE http://localhost:9000/api/order/641bb0c92613332c1a3c7c69
+
+###
+PUT http://localhost:9000/api/order/641bb2e0b827b18b359ca63f
+Content-Type: application/json
+
+{
+    "orderNumber": 1,
+    "shipped": "Yes",
+    "quantity": 20,
+    "totalPrice": 200
+}
